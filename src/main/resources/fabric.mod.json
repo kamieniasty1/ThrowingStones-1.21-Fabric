@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "throwing_stones",
+	"version": "${version}",
+	"name": "Throwing Stones",
+	"description": "This mod adds a rock item that you can throw at mobs or other players.",
+	"authors": [
+		"Kamieniasty, Elvinwitha3"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/kamieniasty1/ThrowingStones-1.21-Fabric"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/throwing_stones/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kamieniasty.throwing_stones.ThrowingStones"
+		],
+		"fabric-datagen": [
+			"com.kamieniasty.throwing_stones.ThrowingStonesDataGenerator"
+		]
+	},
+	"mixins": [
+		"throwing_stones.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
